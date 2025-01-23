@@ -2,5 +2,5 @@
 
 try monopoly phisics here: https://grayu3.github.io/monopoly-fisika/
 
-thanks to: thanks to: https://github.com/intrepidcoder/monopoly
+thanks to: https://github.com/intrepidcoder/monopoly
 for the source code
