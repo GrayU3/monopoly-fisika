@@ -20,6 +20,13 @@ const questionPools = {
             correctAnswer: 1,
             reward: 100,
             loses: -50
+        },
+        {
+            text: "Solve: 20 × 4",
+            options: ["40", "60", "80", "100"],
+            correctAnswer: 2,
+            reward: 100,
+            loses: -50
         }
     ]
 };
