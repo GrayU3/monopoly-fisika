@@ -3026,3 +3026,64 @@ window.onload = function() {
 
 
 };
+function adjustMapSize() {
+    const board = document.getElementById("board");
+    const screenWidth = window.innerWidth;
+
+    if (screenWidth <= 768) {
+        // Smaller screens
+        board.style.width = "90%"; // Adjust width for smaller screens
+        board.style.margin = "10px auto"; // Center the board
+    } else if (screenWidth <= 1024) {
+        // Medium screens (tablets)
+        board.style.width = "80%";
+        board.style.margin = "20px auto";
+    } else {
+        // Large screens (PC)
+        board.style.width = "auto"; // Default size
+        board.style.margin = "25px";
+    }
+}
+
+// Call the function on window resize
+window.addEventListener("resize", adjustMapSize);
+
+// Call the function on initial load
+window.addEventListener("load", adjustMapSize);
+let zoomLevel = 1;
+
+function zoomMap(scale) {
+    const board = document.getElementById("board");
+    zoomLevel *= scale;
+    board.style.transform = `scale(${zoomLevel})`;
+    board.style.transformOrigin = "center";
+}
+
+// Add zoom buttons to the UI
+function addZoomButtons() {
+    const zoomInButton = document.createElement("button");
+    zoomInButton.textContent = "+";
+    zoomInButton.style.position = "fixed";
+    zoomInButton.style.bottom = "20px";
+    zoomInButton.style.right = "60px";
+    zoomInButton.style.padding = "10px";
+    zoomInButton.style.fontSize = "16px";
+    zoomInButton.style.cursor = "pointer";
+    zoomInButton.onclick = () => zoomMap(1.2);
+
+    const zoomOutButton = document.createElement("button");
+    zoomOutButton.textContent = "-";
+    zoomOutButton.style.position = "fixed";
+    zoomOutButton.style.bottom = "20px";
+    zoomOutButton.style.right = "20px";
+    zoomOutButton.style.padding = "10px";
+    zoomOutButton.style.fontSize = "16px";
+    zoomOutButton.style.cursor = "pointer";
+    zoomOutButton.onclick = () => zoomMap(0.8);
+
+    document.body.appendChild(zoomInButton);
+    document.body.appendChild(zoomOutButton);
+}
+
+// Call the function to add zoom buttons
+window.addEventListener("load", addZoomButtons);
