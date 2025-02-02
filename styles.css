@@ -628,23 +628,23 @@ td {
 }
 
 .board-top {
-    width: 72px;
+    width: 30px;
     height: 102px;
 }
 
 .board-bottom {
-    width: 72px;
+    width: 30px;
     height: 102px;
 }
 
 .board-left {
     width: 72px;
-    height: 102px;
+    height: 50px;
 }
 
 .board-right {
     width: 72px;
-    height: 102px;
+    height: 50px;
 }
 
 .enlarge {
