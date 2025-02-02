@@ -622,29 +622,30 @@ td {
     background-size: auto 40px;
 }
 
+
 .board-corner {
     width: 90px;
-    height: 72px;
+    height: 50px;
 }
 
 .board-top {
-    width: 30px;
-    height: 102px;
+    width: 80px;
+    height: 90px;
 }
 
 .board-bottom {
-    width: 30px;
-    height: 102px;
+    width: 80px;
+    height: 90px;
 }
 
 .board-left {
     width: 72px;
-    height: 50px;
+    height: 40px;
 }
 
 .board-right {
     width: 72px;
-    height: 50px;
+    height: 40px;
 }
 
 .enlarge {
@@ -832,7 +833,7 @@ td {
 
 .board-left .cell-owner {
     background-image: url("images/vert-bar.png");
-    height: 68px;
+    height: 50px;
     left: -25px;
     top: 0;
     width: 15px;
@@ -840,7 +841,7 @@ td {
 
 .board-right .cell-owner {
     background-image: url("images/vert-bar.png");
-    height: 68px;
+    height: 50px;
     right: -25px;
     top: 0;
     width: 15px;
@@ -963,3 +964,26 @@ td {
     opacity: 1;
     visibility: visible;
 }
+/* Ensure the colspan="9" cell and its content do not disrupt layout */
+/* Add this to position the parent cell relatively */
+.board-center {
+    position: relative; /* Key fix: Create a positioning context for the jail */
+    width: auto;
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+  
+  /* Jail styling adjustments */
+  #jail {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for exact centering */
+    width: 65px;
+    height: 65px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    z-index: 2;
+  }
