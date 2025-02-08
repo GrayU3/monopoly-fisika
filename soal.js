@@ -5,28 +5,28 @@ const questionPools = {
             options: ["54", "56", "58", "60"],
             correctAnswer: 1, // Index of the correct option
             reward: 100,
-            loses: -50
+            loses: -100
         },
         {
             text: "Solve: 15 ÷ 3",
             options: ["4", "5", "6", "7"],
             correctAnswer: 1,
             reward: 100,
-            loses: -50
+            loses: -100
         },
         {
             text: "Solve: 15 ÷ 5",
             options: ["4", "3", "6", "7"],
             correctAnswer: 1,
             reward: 100,
-            loses: -50
+            loses: -100
         },
         {
             text: "Solve: 20 × 4",
             options: ["40", "60", "80", "100"],
             correctAnswer: 2,
             reward: 100,
-            loses: -50
+            loses: -100
         }
     ]
 };
