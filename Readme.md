@@ -1,4 +1,4 @@
-# monopoly
+# Monopoly
 
 - Enjoy the game! [https://grayu3.github.io/monopoly-fisika/](https://grayu3.github.io/monopoly-fisika/).
 
