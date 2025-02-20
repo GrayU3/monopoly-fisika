@@ -1746,7 +1746,6 @@ function chanceCommunityChest() {
 			chanceCards.index = 0;
 		}
 
-	//science complex
 	}  else {
 		if (!p.human) {
 			p.AI.alertList = "";
@@ -2297,20 +2296,33 @@ function land(increasedRent) {
 	s.landcount++;
 	addAlert(p.name + " landed on " + s.name + ".");
 
-	if (p.position === 3 || p.position === 6 || p.position === 9 || p.position === 11 || p.position === 14 || p.position === 19 || p.position === 24 || p.position === 27 || p.position === 29 || p.position === 32 || p.position === 34 || p.position === 39){
-    	let question = null;
+	// Science Complex
+	if (p.position === 3 || p.position === 6 || p.position === 9 || p.position === 11 || 
+		p.position === 14 || p.position === 19 || p.position === 24 || p.position === 27 || 
+		p.position === 29 || p.position === 32 || p.position === 34 || p.position === 39) {
 
 		const pool = questionPools.physics;
-        question = pool[Math.floor(Math.random() * pool.length)];
+		let question = pool[Math.floor(Math.random() * pool.length)];
 
-		// Show the popup if a question was selected
-		popupQuiz(question, function() {
+		if (!p.human) {
+			// AI automatically answers correctly
+			popupQuiz(question) //still doesn't work but okay :)
+			let correctIndex = question.correctAnswer;
+			handleAnswer(correctIndex);
+
+			// Continue processing the AI's turn
 			continueLandProcessing(p, s);
-		});
+		} else {
+			// Human players get the popup to answer manually
+			popupQuiz(question, function() {
+				continueLandProcessing(p, s);
+			});
+		}
 
 	} else {
-        continueLandProcessing(p, s);
-    }
+		continueLandProcessing(p, s);
+	}
+
 
 	// Allow player to buy the property on which he landed.
 	function continueLandProcessing(p, s) {
