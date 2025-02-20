@@ -1,8 +1,17 @@
 # monopoly
 
-A JavaScript/HTML/CSS Monopoly implementation with full game play. Supports two-eight players.
+- A JavaScript/HTML/CSS Monopoly implementation with full game play. Supports two-eight players.
 
-Play online at [https://grayu3.github.io/monopoly-fisika/](https://grayu3.github.io/monopoly-fisika/).
+## Gameplay
+- You can play against an AI.
+- The AI follows the same movement rules as a human player.
 
-you can play with an AI and if the AI landed on science complex the AI will always answer correctly
+## Science Complex Rules
+- If the AI lands on the **Science Complex**, it will always answer correctly.
+- The **Science Complex** contains multiple-choice questions.
+- All questions in the **Science Complex** are exclusively about **math**.
+
+Enjoy the game! [https://grayu3.github.io/monopoly-fisika/](https://grayu3.github.io/monopoly-fisika/).
+
+
 
