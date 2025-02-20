@@ -1,7 +1,7 @@
 body {
   background: #f0f0f0;
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #333;
   min-width: 1075px;
 }
@@ -281,7 +281,7 @@ td {
 #menutable {
   padding: 0;
   text-align: left;
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #fff;
   font-weight: bold;
   font-size: 16px;
@@ -322,7 +322,7 @@ td {
 #popup {
   width: 300px;
   min-width: 300px;
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   padding: 20px;
   text-align: center;
@@ -386,7 +386,7 @@ td {
 #stats {
   max-width: 914px;
   min-width: 454px;
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   padding: 20px;
   text-align: center;
@@ -481,7 +481,7 @@ td {
   background-color: #007bff;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Calibri", "Arial";
+  font-family: "Calibri", "Roboto";
   color: #fff;
   border-radius: 5px;
 }
@@ -499,7 +499,7 @@ td {
 }
 
 #deed-mortgaged {
-  font-family: "Calibri", "Arial";
+  font-family: "Calibri", "Roboto";
   font-size: 16px;
   text-align: center;
   color: #333;
@@ -514,7 +514,7 @@ td {
 }
 
 #deed-special {
-  font-family: "Calibri", "Arial";
+  font-family: "Calibri", "Roboto";
   text-align: justify;
   color: #333;
 }
@@ -657,7 +657,7 @@ td {
   border: 2px solid #ddd;
   text-align: center;
   font-size: 12px;
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto", sans-serif;
   position: fixed;
   z-index: 15;
   border-radius: 10px;
@@ -808,7 +808,7 @@ td {
   position: absolute;
   top: 0;
   left: 0;
-  position: absolute;
+  
   border: 3px solid white;  /* White outline */
   border-radius: 50%;       /* Makes it circular */
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);  /* Adds a shadow effect */
@@ -1011,7 +1011,7 @@ td {
 
 /* General styling */
 body {
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Roboto", cursive, sans-serif;
   background-color: #f8f0dc;
   text-shadow: 1px 1px 0px white, -1px -1px 0px white, 1px -1px 0px white,
     -1px 1px 0px white;
