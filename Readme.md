@@ -3,7 +3,7 @@
 - Enjoy the game! [https://grayu3.github.io/monopoly-fisika/](https://grayu3.github.io/monopoly-fisika/).
 
 ## Gameplay
-- A JavaScript/HTML/CSS Monopoly implementation with full game play. Supports two-eight players.
+- A Monopoly implementation with **science complex**
 - You can play against an AI.
 - The AI follows the same movement rules as a human player.
 
