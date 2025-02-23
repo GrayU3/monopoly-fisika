@@ -50,12 +50,13 @@ const questionPools = {
       loses: -100,
     },
     {
-      text: "solve: 8 × 7",
-      options: ["87", "72", "16", "56"],
+      text: "73 + 27",
+      options: ["120", "130", "110", "100"],
       correctAnswer: 3,
       reward: 100,
       loses: -100,
-    }
+    },
+    
   ],
 };
 
@@ -91,17 +92,23 @@ function popupQuiz(question, onComplete) {
       addAlert(player.name + " Correct! You earned $" + question.reward + ".");
       player.money += question.reward;
       player.correctAnswers += 1; // Increment correct answer count
-    } else {
+    } else if (selectedIndex != question.correctAnswer) {
       addAlert(
         player.name +
           " Incorrect. You lost $" +
           Math.abs(question.loses) +
           ". The correct answer was: " +
           question.options[question.correctAnswer] +
-          "."
+          ". You answered incorrectly, so you can't buy this property."
       );
+
+      setTimeout(function () {
+        popup("You answered incorrectly, so you can't buy this property.");
+      }, 500);
+
       player.money += question.loses; // Deduct money
       player.wrongAnswers += 1; // Increment wrong answer count
+      return;
     }
 
     updateMoney(); // Update the player's money display
