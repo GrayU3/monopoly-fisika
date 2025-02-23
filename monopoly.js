@@ -2964,7 +2964,7 @@ function play() {
   setTimeout(function () {
     $("#popupwrap").hide();
     $("#popupbackground").fadeOut(3000);
-  }, 5000);
+  }, 4000);
 
   // Check for bankruptcy.
   p.pay(0, p.creditor);
