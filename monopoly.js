@@ -2961,6 +2961,10 @@ function play() {
 
   addAlert("It is " + p.name + "'s turn.");
   popup("it is " + p.name + "'s turn.");
+  setTimeout(function () {
+    $("#popupwrap").hide();
+    $("#popupbackground").fadeOut(3000);
+  }, 5000);
 
   // Check for bankruptcy.
   p.pay(0, p.creditor);
