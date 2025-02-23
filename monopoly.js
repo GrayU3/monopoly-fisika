@@ -2963,8 +2963,8 @@ function play() {
   popup("it is " + p.name + "'s turn.");
   setTimeout(function () {
     $("#popupwrap").hide();
-    $("#popupbackground").fadeOut(3000);
-  }, 4000);
+    $("#popupbackground").fadeOut(500);
+  }, 3000);
 
   // Check for bankruptcy.
   p.pay(0, p.creditor);
