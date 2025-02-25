@@ -13,13 +13,102 @@ td {
   padding: 8px;
 }
 
+/* Setup Container */
 #setup {
-  display: none;
-  margin: 20px;
-  padding: 20px;
-  background: #fff;
+  display: block;
+  max-width: 600px;
+  margin: 20px auto;       /* Reduced margin */
+  padding: 15px;           /* Reduced padding */
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Style */
+#setup h2 {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 15px;     /* Reduced margin-bottom */
+  color: #444;
+}
+
+/* General Section Spacing */
+#setup > div {
+  margin-bottom: 10px;     /* Reduced spacing between sections */
+}
+
+/* Styling for "Select number of players" section */
+#setup select,
+#setup input[type="text"] {
+  padding: 6px 8px;        /* Reduced padding */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border 0.3s ease;
+}
+#setup select:focus,
+#setup input[type="text"]:focus {
+  border-color: #007bff;
+}
+
+/* Player Input Card */
+.player-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #ffffff, #f9f9f9);
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;           /* Reduced padding */
+  margin-bottom: 10px;     /* Reduced margin */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional label styling */
+.player-input span.label {
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 10px;
+  width: 80px;
+}
+
+/* Make player's name field flexible */
+.player-input input[type="text"] {
+  flex: 1;
+  margin-right: 5px;
+}
+
+/* Style for dropdown selects within player cards */
+.player-input select {
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+/* Start Game Button */
+#setup input[type="button"] {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;      /* Reduced padding */
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+  display: block;
+  margin: 15px auto 5px;   /* Reduced margin */
+}
+#setup input[type="button"]:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #0056b3, #003f7f);
+}
+
+/* Note Styling */
+#noF5 {
+  text-align: center;
+  font-size: 12px;
+  color: #777;
+  margin-top: 5px;         /* Reduced margin-top */
+  font-style: italic;
 }
 
 #moneybar {
@@ -42,7 +131,7 @@ td {
 }
 
 #moneybarwrap {
-  position: absolute;
+  position:fixed;
   min-width: 150px;
   top: 0;
   right: 0;
@@ -1085,4 +1174,19 @@ body {
     font-size: 16px;
     padding: 8px 16px;
   }
+}
+
+.blazing-title {
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ff4500; /* Blazing orange-red */
+  text-shadow: 0 0 3px #ff4500, 0 0 20px #ff6347, 0 0 30px #ffd700;
+  animation: flicker 0.9s infinite alternate;
+  text-align: center;
+}
+
+@keyframes flicker {
+  0% { text-shadow: 0 0 3px #ff4500, 0 0 20px #ff6347, 0 0 30px #ffd700; }
+  100% { text-shadow: 0 0 15px #ff6347, 0 0 25px #ff4500, 0 0 35px #ffd700; }
 }
