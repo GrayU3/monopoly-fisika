@@ -17,8 +17,8 @@ td {
 #setup {
   display: block;
   max-width: 600px;
-  margin: 20px auto;       /* Reduced margin */
-  padding: 15px;           /* Reduced padding */
+  margin: 20px auto; /* Reduced margin */
+  padding: 15px; /* Reduced padding */
   background: rgba(255, 255, 255, 0.95);
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
@@ -29,19 +29,19 @@ td {
   font-size: 24px;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 15px;     /* Reduced margin-bottom */
+  margin-bottom: 15px; /* Reduced margin-bottom */
   color: #444;
 }
 
 /* General Section Spacing */
 #setup > div {
-  margin-bottom: 10px;     /* Reduced spacing between sections */
+  margin-bottom: 10px; /* Reduced spacing between sections */
 }
 
 /* Styling for "Select number of players" section */
 #setup select,
 #setup input[type="text"] {
-  padding: 6px 8px;        /* Reduced padding */
+  padding: 6px 8px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -57,10 +57,10 @@ td {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(135deg, #ffffff, #f9f9f9);
+  background: linear-gradient(135deg, #686b6eb4, #67696b42);
   border-radius: 10px;
-  padding: 10px;           /* Reduced padding */
-  margin-bottom: 10px;     /* Reduced margin */
+  padding: 10px;
+  margin-bottom: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -89,13 +89,13 @@ td {
   background: linear-gradient(135deg, #007bff, #0056b3);
   color: #fff;
   border: none;
-  padding: 10px 20px;      /* Reduced padding */
+  padding: 10px 20px;
   border-radius: 8px;
   font-size: 18px;
   cursor: pointer;
   transition: transform 0.2s ease, background 0.3s ease;
   display: block;
-  margin: 15px auto 5px;   /* Reduced margin */
+  margin: 15px auto 5px;
 }
 #setup input[type="button"]:hover {
   transform: scale(1.05);
@@ -107,7 +107,7 @@ td {
   text-align: center;
   font-size: 12px;
   color: #777;
-  margin-top: 5px;         /* Reduced margin-top */
+  margin-top: 5px; /* Reduced margin-top */
   font-style: italic;
 }
 
@@ -131,7 +131,7 @@ td {
 }
 
 #moneybarwrap {
-  position:fixed;
+  position: fixed;
   min-width: 150px;
   top: 0;
   right: 0;
@@ -897,17 +897,16 @@ td {
   position: absolute;
   top: 0;
   left: 0;
-  
-  border: 3px solid white;  /* White outline */
-  border-radius: 50%;       /* Makes it circular */
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);  /* Adds a shadow effect */
+
+  border: 3px solid white; /* White outline */
+  border-radius: 50%; /* Makes it circular */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7); /* Adds a shadow effect */
 }
 
 #jailpositionholder .cell-position {
   top: -4px !important; /* Moves the icon up */
   position: relative;
 }
-
 
 .cell-owner {
   background-size: cover;
@@ -1175,8 +1174,11 @@ body {
     padding: 8px 16px;
   }
 }
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap');
+
 
 .blazing-title {
+  font-family: 'Rubik Burned', Algerian; /* Change to a fiery font */
   font-size: 2em;
   font-weight: bold;
   text-transform: uppercase;
@@ -1187,6 +1189,42 @@ body {
 }
 
 @keyframes flicker {
-  0% { text-shadow: 0 0 3px #ff4500, 0 0 20px #ff6347, 0 0 30px #ffd700; }
-  100% { text-shadow: 0 0 15px #ff6347, 0 0 25px #ff4500, 0 0 35px #ffd700; }
+  0% {
+    text-shadow: 0 0 3px #ff4500, 0 0 5px #ff6347, 0 0 10px #ffd700;
+  }
+  20% {
+    text-shadow: 0 0 5px #ff6347, 0 0 10px #ff4500, 0 0 15px #ffd700;
+  }
+}
+
+/* Import Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap");
+
+/* Custom Graffiti Font */
+@font-face {
+    font-family: 'GraffitiFont';
+    src: url('graffiti-font.woff2') format('woff2');
+}
+
+ /* Graffiti Heading with Shadow */
+ .graffiti-heading {
+  font-family: 'Rubik Wet Paint', cursive;
+  font-size: 22px; /* Bigger for impact */
+  text-shadow: 1px 1px 1px #ffffff;  /* Yellow outline */
+  display: inline-block;
+  position: relative;
+}
+
+/* Graffiti Text with Custom Font */
+.graffiti-text {
+  font-family: 'GraffitiFont', sans-serif;
+  font-size: 22px;
+  color: #0ff; /* Neon cyan */
+}
+
+/* Spray-Paint Effect */
+.graffiti-spray {
+  font-family: 'Rubik Wet Paint', cursive;
+  font-size: 22px;
+  color:  #000000;
 }
