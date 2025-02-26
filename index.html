@@ -6,6 +6,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&family=Permanent+Marker&display=swap" rel="stylesheet">
 	<script type="text/javascript" src="classicedition.js"></script>
 	<script type="text/javascript" src="ai.js"></script>
 	<script type="text/javascript" src="monopoly.js"></script>
@@ -363,7 +364,13 @@
 	<div id="setup">
 		<h4 class="blazing-title">🔥 Science Monopoly 🔥</h4>
 		<div style="margin-bottom: 20px;">
-			Select number of players.
+			<div class="graffiti-heading graffiti-text graffiti-drip graffiti-spray">Select number of players:</div>
+			<svg width="0" height="0">
+				<filter id="spray">
+					<feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" result="noise"/>
+					<feDisplacementMap in="SourceGraphic" in2="noise" scale="5"/>
+				</filter>
+			</svg>
 			<select id="playernumber" title="Select the number of players for the game.">
 				<option selected="selected">2</option>
 				<option>3</option>
