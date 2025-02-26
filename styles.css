@@ -2,6 +2,7 @@ body {
   background: #f0f0f0;
   background-image: url('images/the-background.webp');
   background-size: cover;
+  background-attachment: fixed;
   background-repeat: no-repeat; /* Prevents repetition */
   background-position: center;
   height: 100vh;
