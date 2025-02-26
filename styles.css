@@ -1,5 +1,10 @@
 body {
   background: #f0f0f0;
+  background-image: url('images/the-background.webp');
+  background-size: cover;
+  background-repeat: no-repeat; /* Prevents repetition */
+  background-position: center;
+  height: 100vh;
   margin: 0;
   font-family: "Roboto", sans-serif;
   color: #333;
@@ -19,7 +24,7 @@ td {
   max-width: 600px;
   margin: 20px auto; /* Reduced margin */
   padding: 15px; /* Reduced padding */
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.884);
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
