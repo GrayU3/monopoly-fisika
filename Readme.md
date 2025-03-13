@@ -1,6 +1,6 @@
 # Monopoly
 
-- [Enjoy the game!][https://grayu3.github.io/monopoly-fisika/](https://grayu3.github.io/monopoly-fisika/).
+- [Enjoy the game!](https://grayu3.github.io/monopoly-fisika/).
 
 ## Gameplay
 - A Monopoly implementation with **science complex**
