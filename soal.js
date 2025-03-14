@@ -56,6 +56,34 @@ const questionPools = {
       reward: 100,
       loses: -100,
     },
+    {
+      text: "Gerak Lurus: Mobil melaju dengan kecepatan 30 m/s selama 5 detik. Berapakah jarak yang ditempuh mobil?",
+      options: ["100", "125", "150", "175"],
+      correctAnswer: 2,
+      reward: 100,
+      loses: -100,
+    },
+    {
+      text: "Hukum Newton: Sebuah gaya 12 N bekerja pada benda bermassa 3 kg. Berapakah percepatan benda?",
+      options: ["2 m/s^2", "3 m/s^2", "4 m/s^2", "5 m/s^2"],
+      correctAnswer: 2,
+      reward: 100,
+      loses: -100,
+    },
+    {
+      text: "Energi Kinetik: Sebuah bola bermassa 2 kg bergerak dengan kecepatan 3 m/s. Berapakah energi kinetiknya?",
+      options: ["6 J", "8 J", "9 J", "12 J"],
+      correctAnswer: 2,
+      reward: 100,
+      loses: -100,
+    },
+    {
+      text: "Hukum Ohm: Sebuah rangkaian memiliki arus 3 A dan hambatan 4 Ω. Berapakah tegangan pada rangkaian tersebut?",
+      options: ["6 V", "9 V", "12 V", "15 V"],
+      correctAnswer: 2,
+      reward: 100,
+      loses: -100,
+    },
     
   ],
 };
@@ -108,7 +136,7 @@ function popupQuiz(question, onComplete) {
 
       player.money += question.loses; // Deduct money
       player.wrongAnswers += 1; // Increment wrong answer count
-      return;
+      return; //another else? wanna add trade?
     }
 
     updateMoney(); // Update the player's money display
