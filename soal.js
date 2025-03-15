@@ -58,7 +58,7 @@ const questionPools = {
     },
     {
       text: "Gerak Lurus: Mobil melaju dengan kecepatan 30 m/s selama 5 detik. Berapakah jarak yang ditempuh mobil?",
-      options: ["100", "125", "150", "175"],
+      options: ["100 m", "125 m", "150 m", "175 m"],
       correctAnswer: 2,
       reward: 100,
       loses: -100,
