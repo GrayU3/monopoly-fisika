@@ -12,7 +12,7 @@
 - The **Science Complex** contains multiple-choice questions.
 - All questions in the **Science Complex** are exclusively about **math** and **physics**.
 
-## kind of physics topics are involved
+## Kind of physics topics are involved
 - Newton’s Laws of Motion
 - Kinematics (speed, velocity, acceleration)
 - Forces & Free Body Diagrams
