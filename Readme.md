@@ -10,7 +10,7 @@
 ## Science Complex Rules
 - If the AI lands on the **Science Complex**, it will always answer correctly.
 - The **Science Complex** contains multiple-choice questions.
-- All questions in the **Science Complex** are exclusively about **math**.
+- All questions in the **Science Complex** are exclusively about **math** and **physics**.
 
 ## Thanks to: 
 - [https://github.com/intrepidcoder/monopoly](https://github.com/intrepidcoder/monopoly)
