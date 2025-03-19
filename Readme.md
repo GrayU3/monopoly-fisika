@@ -20,6 +20,7 @@
 - Laws of Thermodynamics
 - Momentum & Collisions
 - Gravity & Projectile Motion
+- math
 
 ## Thanks to: 
 - [https://github.com/intrepidcoder/monopoly](https://github.com/intrepidcoder/monopoly)
